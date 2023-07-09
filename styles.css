@@ -1,8 +1,15 @@
-.header {
+* {
+    margin: 0;
+}
+header {
     background-color:black ;
 
 }
 
-.button {
+button {
     background-color: blue;
+}
+img {
+    height:auto;
+    width:200px ;
 }
