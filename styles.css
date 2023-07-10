@@ -3,24 +3,27 @@
 
 }
 
- @media (min-width:360px) {
-  /* * {
+.pageTitle {
+    font-size: 20px;
+}
+
+ /*@media (min-width:360px) {
+   * {
     font-size: 16px;
-   } */
+   } 
    .pageTitle {
 font-size: 32px;
 }
-}
+}*/
 
-@media (min-width:760px) {
-   /* * {
+/*@media (min-width:760px) {
+    * {
     font-size: 19px;
-    } */
+    } 
     .pageTitle {
 font-size: 38px;
-}
+}*/
     
-}
 
 header {
     display: flex;
@@ -29,20 +32,27 @@ header {
 
 .search {
 display:flex;
-align-items: center;
+align-items: end;
 margin: 10px;
 }
 
 .logo{
     display: flex;
-    align-items: center;
+    align-items:end ;
+}
+
+.homeLink{
+    margin-bottom: 10px;
+    margin-left: 10px;
     font-size: 10px;
 }
 
 
+
+
 button {
     background-color: blue;
-    margin: 10px;
+    margin-right: 10px;
 }
 img {
     height:auto;
