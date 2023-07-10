@@ -1,13 +1,48 @@
-* {
-    margin: 0;
-}
-header {
-    background-color:black ;
+*{
+    font-family: Roboto ,Arial, Helvetica, sans-serif ;
 
 }
+
+ @media (min-width:360px) {
+  /* * {
+    font-size: 16px;
+   } */
+   .pageTitle {
+font-size: 32px;
+}
+}
+
+@media (min-width:760px) {
+   /* * {
+    font-size: 19px;
+    } */
+    .pageTitle {
+font-size: 38px;
+}
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+display:flex;
+align-items: center;
+margin: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
 
 button {
     background-color: blue;
+    margin: 10px;
 }
 img {
     height:auto;
