@@ -28,16 +28,17 @@ body {
     }
 /* Banner Formatting */
 
-.essentialInfo {
+.essentialInfo  {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* essential links and info could be combined into one container but having sperate containers allows for easier formatting if so desired later on */
-.essentialLinks {
+.essentialLinks{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
  /*@media (min-width:360px) {
