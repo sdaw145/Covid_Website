@@ -99,7 +99,7 @@ footer {
 
 button {
     background-color: blue;
-    margin-right: 10px;
+    
 }
 img {
     height:auto;
@@ -134,4 +134,18 @@ img {
     border: 1px solid;
     padding: 10px;
     border-color: black;
+}
+
+.questionare {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+    
+}
+
+.questionare button {
+    max-height: 30px;
+    width: 150px;
 }
