@@ -8,3 +8,9 @@ Photo by <a href="https://unsplash.com/@weenail?utm_source=unsplash&utm_medium=r
 smell
 Photo by <a href="https://unsplash.com/@lejo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elly Johnson</a> on <a href="https://unsplash.com/photos/7sff_QVfpX4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   https://unsplash.com/photos/7sff_QVfpX4
+
+Case Map
+https://coronavirus.data.gov.uk/details/interactive-map/cases
+
+Mortality Graph
+https://www.thelancet.com/journals/laninf/article/PIIS1473-3099%2820%2930195-X/fulltext
