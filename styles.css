@@ -173,3 +173,13 @@ footer {
     height: 300px;
 }
 
+.inputBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    width:240px;
+    display: inline-block;
+}
+
