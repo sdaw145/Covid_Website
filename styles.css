@@ -159,3 +159,17 @@ footer {
     max-height: 30px;
     width: 150px;
 }
+
+/* Contact Form Formatting */
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#message{
+    width: 600px;
+    height: 300px;
+}
+
