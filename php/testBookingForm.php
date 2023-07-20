@@ -52,7 +52,7 @@ mysqli_stmt_execute($stmt);
 
 echo mysqli_stmt_error($stmt);
 
-echo "Record saved."; 
+echo "Thank you ".$name." your test date of ".$testDate." has been submitted. A confirmation email will be sent to ".$email; 
 
 
 ?>
