@@ -53,7 +53,7 @@ mysqli_stmt_execute($stmt);
 
 echo mysqli_stmt_error($stmt);
 
-echo "Thank you ".$name." your query has been submitted. A memeber of the support tema will respond within 2 buisness days. If your query is urgent please call the helpline on 08001234567 (Monday to Friday 08:00-18:00). A confirmation email has been sent to ".$email ; 
+echo "Thank you ".$name." your query has been submitted. A memeber of the support team will respond within 2 buisness days. If your query is urgent please call the helpline on 08001234567 (Monday to Friday 08:00-18:00). A confirmation email has been sent to ".$email ; 
 
 
 ?>
