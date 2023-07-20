@@ -7,10 +7,10 @@ $phoneNum = filter_input(INPUT_POST, "phoneNum", FILTER_VALIDATE_INT);
 $type = filter_input(INPUT_POST, "type", FILTER_VALIDATE_INT);
 $message = $_POST["message"];
 //$terms = filter_input(INPUT_POST, "terms",FILTER_VALIDATE_BOOLEAN);//
-
+/*
 if (! $terms){
   die("Terms must be accepted to continue");
-}
+} */
 // below only used when developing locally //
 $host = "localhost";
 $dbname = "contactForm_db";
