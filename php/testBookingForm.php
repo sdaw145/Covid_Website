@@ -6,7 +6,7 @@ $email = $_POST["email"];
 $phoneNum = filter_input(INPUT_POST, "phoneNum", FILTER_VALIDATE_INT);
 $nhsNum = filter_input(INPUT_POST, "nhsNum", FILTER_VALIDATE_INT);
 $testLocation = filter_input(INPUT_POST, "testLocation", FILTER_VALIDATE_INT);
-$testDate = $_POST["message"];
+$testDate = $_POST["testDate"];
 //$terms = filter_input(INPUT_POST, "terms",FILTER_VALIDATE_BOOLEAN);//
 
 /*if (! $terms){
@@ -29,8 +29,8 @@ if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }           
         
-$sql = "INSERT INTO contactform (name, email, phoneNum,type, message)
-        VALUES (?, ?, ?, ?, ?)"; //placeholder values to prevent sql injection attacks //
+$sql = "INSERT INTO testBooking (testType,name, email, phoneNum, nhsNum, testLocation, testDate)
+        VALUES (?, ?, ?, ?, ?, ?, ?)"; //placeholder values to prevent sql injection attacks //
 
 $stmt = mysqli_stmt_init($conn); //uses the connection as an arguement //
 
@@ -39,12 +39,14 @@ if ( ! mysqli_stmt_prepare($stmt, $sql)) {
     die(mysqli_error($conn));
 }
 
-mysqli_stmt_bind_param($stmt, "ssiis",
+mysqli_stmt_bind_param($stmt, "issiiis",
+                       $testType,
                        $name,
                        $email,
                        $phoneNum,
-                       $type,
-                       $message);
+                       $nhsNum,
+                       $testLocation,
+                       $testDate);
 
 mysqli_stmt_execute($stmt);
 
