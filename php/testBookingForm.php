@@ -1,10 +1,12 @@
 <?php 
 
+$testType = filter_input(INPUT_POST, "testType", FILTER_VALIDATE_INT);
 $name = $_POST["name"];
 $email = $_POST["email"];
 $phoneNum = filter_input(INPUT_POST, "phoneNum", FILTER_VALIDATE_INT);
-$type = filter_input(INPUT_POST, "type", FILTER_VALIDATE_INT);
-$message = $_POST["message"];
+$nhsNum = filter_input(INPUT_POST, "nhsNum", FILTER_VALIDATE_INT);
+$testLocation = filter_input(INPUT_POST, "testLocation", FILTER_VALIDATE_INT);
+$testDate = $_POST["message"];
 //$terms = filter_input(INPUT_POST, "terms",FILTER_VALIDATE_BOOLEAN);//
 
 /*if (! $terms){
