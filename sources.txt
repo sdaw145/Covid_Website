@@ -1,0 +1,20 @@
+text generator
+https://loremipsum.io/ 
+
+form element alignment 
+https://www.youtube.com/watch?v=N8ZMzN40q0g&ab_channel=LindaDuHadway
+
+media cards
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox#media_objects
+
+css comments
+https://www.w3schools.com/css/css_comments.asp
+
+style guidelines for gov websites
+https://design.homeoffice.gov.uk/styles/typography#:~:text=StylesTypography,it%20easier%20to%20read%20online.
+
+flexbox
+https://internetingishard.netlify.app/html-and-css/flexbox/index.html
+
+roboto font
+https://fonts.google.com/specimen/Roboto
