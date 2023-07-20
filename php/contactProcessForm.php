@@ -2,17 +2,18 @@
 
 
 $name = $_POST["name"];
-$message = $_POST["message"];
-$priority = filter_input(INPUT_POST, "priority", FILTER_VALIDATE_INT);
+$email = $_POST["email"];
+$phoneNum = filter_input(INPUT_POST, "phoneNum", FILTER_VALIDATE_INT);
 $type = filter_input(INPUT_POST, "type", FILTER_VALIDATE_INT);
-$terms = filter_input(INPUT_POST, "terms",FILTER_VALIDATE_BOOLEAN);
+$message = $_POST["message"];
+//$terms = filter_input(INPUT_POST, "terms",FILTER_VALIDATE_BOOLEAN);//
 
 if (! $terms){
   die("Terms must be accepted to continue");
 }
 // below only used when developing locally //
 $host = "localhost";
-$dbname = "message_db";
+$dbname = "contactForm_db";
 $username ="root";
 $password ="mysql";
 
@@ -26,7 +27,7 @@ if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }           
         
-$sql = "INSERT INTO message (name, body, priority, type)
+$sql = "INSERT INTO contactForm (name, email, phoneNum,type, message)
         VALUES (?, ?, ?, ?)"; //placeholder values to prevent sql injection attacks //
 
 $stmt = mysqli_stmt_init($conn); //uses the connection as an arguement //
@@ -38,9 +39,9 @@ if ( ! mysqli_stmt_prepare($stmt, $sql)) {
 
 mysqli_stmt_bind_param($stmt, "ssii",
                        $name,
-                       $message,
-                       $priority,
-                       $type);
+                       $email,
+                       $phoneNum,
+                       $message);
 
 mysqli_stmt_execute($stmt);
 
