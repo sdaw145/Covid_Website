@@ -83,7 +83,18 @@ margin: 10px;
 
 .search button{
     margin-right: 10px;
+    cursor: pointer;
 }
+
+.dropBtn, .dropBtn:focus{
+    background-color: aqua;
+}
+
+.dropDown{
+    position: relative;
+    display: inline-block;
+}
+
 
 .logo{
     display: flex;
