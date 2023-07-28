@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Covid-19 Information</title>
         <link  rel="stylesheet" href="styles.css"/>
-        <script src="js.js"></script>
+        <script src="./js.js"></script>
     </head>
 
     <Body>
@@ -19,26 +19,28 @@
             <div class="pageTitle">
                <h1>Home</h1>
             </div>
+
+
+
             <div class="search">
-
-
-            <div class="dropDown">    
-            <button onclick="dropDown()" class="dropBtn">Menu</button>
-            <div id="menuDropDown" class="dropDownContent">
-                <a href="../Covid_Website/pages/indivdualGuidance.html"></a>
-                <a href="../Covid_Website/pages/testing.html"></a>
-                <a href="../Covid_Website/pages/testBooking.html"></a>
-                <a href="../Covid_Website/pages/buisnessGuidance.html"></a>
-                <a href="../Covid_Website/pages/caseData.html"></a>
-                <a href="../Covid_Website/pages/contact.html"></a>
-            </div>
+            
+            <button  class="dropBtn">Menu</button>
+            
+            <input id="searchBox" onkeyup="search_links()" type="text"  name="searchBox"  placeholder="Search" >
             </div>
 
+            <ul class="searchList" id ='searchList'>
+            <li><a href="../Covid_Website/pages/buisnessGuidance.html" class="searchLinks">Buisness Guidance</a></li>
+            <li><a href="pages/indivdualGuidance.html" class="searchLinks">Guidance for Indivduals</a></li>
+            <li><a href="pages/testing.html" class="searchLinks">Testing</a></li>
+            <li><a href="pages/caseData.html" class="searchLinks">Case Data</a></li>
+            <li><a href="pages/initiatives.html" class="searchLinks">Current Initiatives</a></li>
+            <li><a href="pages/help.html" class="searchLinks">Help and Contact</a></li>
+            </ul>
+            
 
 
-
-            <input type="text" id="search" name="Search">
-             </div>
+            
             
         </header>
 
@@ -80,7 +82,7 @@
 
         <footer>
             <div class="helpContact">
-              <button>?</button>
+              <button type="button" onclick="contactInfo()">?</button>
               <a href="pages/help.html">Help and Contact</a>
             </div>
             <div class="logo">

@@ -1,6 +1,5 @@
 *{
     font-family: Roboto ,Arial, Helvetica, sans-serif ;
-
 }
 
 button {
@@ -85,6 +84,12 @@ margin: 10px;
     margin-right: 10px;
     
 }
+
+header li {
+    display:none;
+}
+
+
 
 
 
